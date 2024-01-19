@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .video {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="audio/awaken.mp3" controls autoplay loop></audio>
+    <audio src="audio/relax.mp3" controls autoplay loop></audio>
+
+    <video src="audio/flower.mp4" controls autoplay muted loop></video>
+
+    <video controls>
+        <source src="audio/flower.mp4">
+        <source src="audio/flower.ogg">
+        <!-- 같은 동영상인데 확장자를 여러버전으로 가져올 때 쓰는 법
+        오디오도 동일 -->
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_83hnV945us?si=9eh4X0bEpPokdIRe" class="video">
+        <!-- 다운받지 않고 유투브 영상 가져오는 법 
+공유=>퍼가기=>복사-->
+    </iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aw3HWq1OPC4?si=R4orlLUejKHJ__Mo">
+        <!-- 넓이 높이 지우고, 클래스 이름을 줘서 css로 설정해줘도 된다 (보더 등도 마찬가지)
+            iframe이 인라인 구조이기 때문에 css로 넓이 높이 주려면 
+            디스플레이-블럭 명령어 필요
+        비율이 안맞는다고해서 동영상 비율 깨지지 않고 비율이 유지되고 나머지 크기만큼 검정 화면이 나옴 -->
+    </iframe>
+
+    <!-- 지도 첨부하는 법
+    구글맵=>장소검색 후=>공유=>지도퍼가기 -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.9510679424798!2d127.14071787636327!3d37.60331062201783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb0b135f24c6f%3A0xb69834ecf26b642f!2z6rWs66as7Jet6rO17JuQ!5e0!3m2!1sko!2skr!4v1700555933937!5m2!1sko!2skr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html>

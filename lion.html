@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box1 {
+            width: 658px;
+            height: 507px;
+            border: 10px groove darkcyan;
+            margin: 30px auto;
+
+            background-image: url("img/lion.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            /* background-position: center center; */
+
+            transition: all 0.5s;
+
+            cursor: pointer;
+
+        }
+
+        .box1:hover {
+            background-size: 130%;
+            /* transform: scale(1.3); */
+            /* 트랜스폼은 이미지뿐만 아니라 
+            전체 크기까지 같이 커짐
+            오버 플로우 히든이 필요하면
+            박스2와 같이 감싸주는 박스가 필요 */
+        }
+
+        .box2 {
+            width: 658px;
+            height: 507px;
+            border: 10px groove darkviolet;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .box2 a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .box2 a img {
+            width: 100%;
+            transition: all 0.5s;
+        }
+
+        .box2 a:hover img {
+            transform: scale(1.5);
+        }
+        .box3{
+            width: 658px;
+            height: 507px;
+            border: 10px groove peru;
+            margin: 100px auto;
+            background: url("img/lion.jpg") no-repeat; 
+            position: relative;
+        }
+        .box3 p{
+            font-size: 80px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-shadow: 0px 3px 4px orangered;
+            font-style: italic;
+            position: absolute;
+        }
+        .left{
+            left: -200px;
+            top: 100px;
+            animation: l_move 1s 1s forwards;
+            opacity: 0;
+            
+        }
+        .right{
+            right:-200px;
+            bottom: 100px;
+            animation: r_move 1s 2s forwards;
+            opacity: 0;
+        }
+        @keyframes l_move{
+            0%{
+                left: -200px;
+
+            }
+            100%{                
+                left: 50px;
+                opacity: 1;
+
+            }
+        }
+        @keyframes r_move{
+            0%{
+                right:-200px;
+            }
+            100%{
+                right: 50px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <!-- 배경이미지 -->
+    </div><!-- box1-->
+
+    <div class="box2">
+        <!-- img -->
+        <a href="#"><img src="img/lion.jpg" alt="lion"></a>
+    </div><!-- box2 -->
+    <div class="box3">
+      <p class="left">Lion</p>
+      <p class="right">Lion</p>
+    </div><!-- box3 -->
+    
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {}
+
+        .top1 {
+            height: 100px;
+            background: darkgray;
+            transition: all 1s;
+        }
+
+        .top1:hover + .top2 , .top2:hover{
+            top:0;
+            width: 100%;
+        }
+
+        .top2 {
+            height: 100px;
+            background: skyblue;
+            position: absolute;
+            left: 0;
+            top: -100px;
+        }
+
+        /* .box + h1{
+color: blueviolet;
+더하기연산자
+박스와 바로 붙어있는 h1에만 적용됨
+         } */
+
+        /* .box~h1 {
+            물결 연산자
+            color: brown;
+            박스가 가지고 있는 형제 h1에 적용 됨
+        } */
+        /* h1:first-child{
+            color: blue;
+            가상연산자
+
+        } */
+        /* h1:only-child{
+            color: chocolate;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top1">top1</div>
+        <div class="top2">top2</div>
+        <div class="contents">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Architecto eum saepe cum doloribus, et quibusdam ab
+            in voluptates nemo labore vel impedit voluptas alias
+            facilis asperiores doloremque iusto distinctio! Hic!
+        </div><!-- contents -->
+    </div><!-- wrap -->
+
+    <!-- <div class="box"></div>
+    <h1>안녕하세요</h1>
+    <h1>좋은하루</h1>
+
+    <div>
+        <h1>hello</h1>
+        <h1>good</h1>
+    </div>
+
+    <div>
+        <h1>morning</h1>
+    </div>
+
+    <div></div>
+    <h1>heeeello</h1> -->
+
+
+</body>
+
+</html>

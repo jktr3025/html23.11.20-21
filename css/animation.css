@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 에니메이션
+트래지션과는 다른점 : 
+이벤트 (호버, 액티브 등)이 없어도 변화하는 동작을 넣을 수 있음
+만들어둔 에니메이션을 호출하는 방식
+에니메이션 이름과 듀레이션은 필수*/
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: yellowgreen;
+    /* animation-name: ani1;
+    animation-duration: 1.5s;
+    animation-delay: 1s; */
+    /* animation-iteration-count: infinite; */
+    /* 반복횟수 또는 무제한을 뜻하는 infinite */
+    /* animation-direction: reverse; */
+    /* 에니메이션 방향 
+    reverse 거꾸로
+    alternate 갔다가 되돌아왔다를 반복 */
+    /* animation-fill-mode: forwards;
+    필모드-포워드:에니메이션이 끝나는 지점에서 머루름 */
+    /* animation-timing-function: ease-in-out; */
+    /* animation: ani1 1.5s 1s infinite forwards ease-in-out alternate; */
+    /* 모든 동작을 합쳐서 위와 같이 쓸 수 있음 */
+}
+/* .box:hover{
+        animation: ani1 1.5s 1s infinite forwards ease-in-out alternate;
+호버에도 쓸 수 있으나 잘 쓰지는 않음 }*/
+    
+/* 키프레임즈을 만들어야함 */
+/* 아이디나 클래스처럼 이름을 붙여줘야함
+숫자로 시작하면 안되고 언더바 가능 */
+@keyframes ani1{
+    0%{
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+    /* 0% 값을 안 적어주면 .ami에 준 값과 동일 */
+    100%{
+        width: 500px;
+        height: 500px;
+        background: olive;
+    }
+}
+h1{ animation: ani1 1s;}

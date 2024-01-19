@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 50px 0;
+}
+
+.box1{
+    transition: all 1s linear;
+    /* 일정한 속도로 변함 */
+}
+.box1:hover{
+    width: 500px;
+}
+.box2{
+    transition: all 1s ease;
+    /* 중간 지점이 빨라짐 */
+}
+.box2:hover{
+    width: 500px;
+}
+.box3{
+    transition: all 1s ease-in;
+    /* 끝 지점이 빨라짐 */
+}
+.box3:hover{
+    width: 500px;
+}
+.box4{
+    transition: all 1s ease-out;
+    /* 시작 지점이 빨라짐 */
+}
+.box4:hover{
+    width: 500px;
+}
+.box5{
+    transition: all 1s ease-in-out;
+    /* 시작과 끝 지점이 빨라짐 */
+}
+.box5:hover{
+    width: 500px;
+}

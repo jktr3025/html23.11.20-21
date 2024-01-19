@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+
+#wrap{
+width: 100%;
+height: 950px;
+background: #eee;
+
+}
+.left{
+    width: 200px;
+    height: 850px;
+    background: yellow;
+    float: left;
+}
+.logo{
+    height: 100px;
+    background: cadetblue;
+}
+.logo a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.nav{
+    margin-top: 10px;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    }
+.main > li{}
+.main > li > a{
+    display: block;
+    background: cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+    transition: all 1s;
+}
+.main > li:hover > a{
+    background: skyblue;
+    color: white;
+}
+.main > li:hover .sub{
+    display: block;
+}
+.sub{
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    background: white;
+    padding: 5px 0;
+    color: darkblue;
+}
+.sub li:hover a{
+    color: violet;
+}
+.spot{
+    /* background: darkcyan; */
+    margin-top: 30px;
+    text-align: center;
+}
+.spot a{
+    font-size: 12px;
+    /* border: 1px solid black; */
+    padding: 0 5px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.right{
+    width:calc(100% - 200px);
+    height: 850px;
+    background: yellowgreen;
+    float: right;
+    position: relative;
+}
+.link{
+    width: 200px;
+    height: 250px;
+    background: tomato;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.slid{
+    height: 400px;
+    background: slateblue;
+}
+.lorem{
+    height: 200px;
+    background: slategray;
+}
+.notice{
+    height: 250px;
+    background: steelblue;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background: orange;
+    clear: both;
+}
+.f_logo{
+    width: 200px;
+    height: 100px;
+    background: darkturquoise;
+    float: left;
+}
+.f_txt{
+    width: calc(100% - 200px - 300px);
+    height: 100px;
+    background: darkgreen;
+    float: left;
+}
+.f_sns{
+    width: 300px;
+    height: 100px;
+    background: darkmagenta;
+    float: left;
+}

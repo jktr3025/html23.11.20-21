@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.wrap{}
+
+.header{
+    width: 100%;
+    height: 100px;
+background: rgb(219, 238, 181);
+}
+.h_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    padding: 30px 0 ;
+    /* border: 1px solid; */
+width: 200px;
+height: 100px;
+    float: left;
+}
+.logo > a{
+display:block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    /* border: 1px solid; */
+}
+.header .nav{
+    float: right;
+    /* border: 1px solid darkcyan; */
+    margin-top: 50px;
+}
+.main > li{float: left;
+}
+.main > li:hover >a{
+    background: violet;
+    color: white;
+}
+.main > li > a{display: block;
+    background: pink;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sub{
+}
+.sub li{}
+.sub li a{
+    display: block;
+    background: tan;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.sub li a:hover{
+    background: darkgray;
+
+}
+
+.section{
+    width: 1200px;
+    height: 500px;
+    background: rgb(204, 204, 153);
+    margin: 0 auto;
+}
+.section .slid{
+    background: skyblue;
+    height: 300px;
+}
+.box{}
+.box > div{
+float: left;
+width: calc(100% / 3);
+border: 1px solid darkgreen;
+height: 200px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background: darkgoldenrod;
+}
+.f_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.f_inner > div{
+    float: left;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid chartreuse;
+        }
+        .f_logo{width: 200px;}
+        .f_copy{width: 800px;
+    }
+    .f_sns{width: 200px;}

@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+    /* background: #eee; */
+}
+.left{
+    float: left;
+    /* background: yellowgreen; */
+    width: 200px;
+    height: 650px;
+}
+.logo{
+    height: 100px;
+    background: darkcyan;
+}
+.logo a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.nav{
+    /* background: darkgray; */
+    margin-top: 20px;
+}
+.main{
+    width: 180px;
+    /* background: darkolivegreen; */
+    margin:0 auto ;
+    text-align: center;
+}
+.main > li {
+    margin-bottom: 5px;
+}
+.main > li > a{
+    background: forestgreen;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px 20px 0 0;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.main > li:hover > a{
+    background: darkslategrey;
+}
+.main > li:hover .sub{
+    display: block;
+}
+.sub{display: none;}
+.sub li{
+    
+}
+.sub li a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background: darkgoldenrod;
+}
+.right{
+    float: right;
+    width: 800px;
+    height: 650px;
+    background: wheat;
+}
+.r_a{
+    height: 350px;
+    }
+.r_b{
+    height: 200px;
+}
+.r_b > div{
+    height: 200px;
+    width: calc(100% / 3);
+    float: left;
+}
+.box1{
+    background: darkorange;
+}
+.box2{
+    background: skyblue;
+}
+.box3{
+    background: silver;
+}
+.r_c{
+    height: 100px;
+}
+.r_logo{
+    width: 200px;
+    height: 100px;
+    background: pink;
+    float: left;
+    border-right: 1px dashed darkblue;
+}
+.r_right{
+    width: 600px;
+    background: deepskyblue;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+}
+.up{
+    height: 50px;
+}
+.down{
+    height: 50px;
+    border-top: 1px solid saddlebrown;
+}

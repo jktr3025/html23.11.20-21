@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html , body{
+            font-size: 16px;
+            /* 기본 폰트 사이즈 
+            font-size : 16px = 12pt =100% ;*/
+            height: 100%;
+        }
+        .text1{
+            font-size: 200%;
+            /* 32px 24pt
+            만약 폰트 사이즈를 20px 설정 후 200%라고하면
+            40px */
+        }
+        .text2{
+            font-size: 50px;
+        }
+        .text3{
+            font-size: 30px;
+        }
+        .text3 .txt1{
+            font-size: 2em;
+            /* 원래 폰트 사이즈도 상속 받는건데 
+            em은 내 부모의 폰트 사이즈를 기준으로 몇 배를 줄지 
+                        지정하는 명령어
+            부모인 텍스트3가 30px인데 2em이니 60px 
+            소수점 단위로도 쓸 수 있음*/
+        }
+        .text3 .txt2{
+            font-size: 2rem;
+            /* 32px
+            내 부모의 폰트 사이즈와 상관없이 
+            조상 폰트 사이즈의 2배 */
+        }
+        .text4{
+            width: 50%;
+            height: 50%;
+            background: forestgreen;
+            font-size: 10vw;
+            /* 내 넓이의 10%값
+            vh는 높이의 몇%값 
+            반응형에 유용*/
+        }
+        .text5{
+            width: 50vw;
+            height: 50vh;
+            background: darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text1">text1</div>
+
+    <div class="text2">text2</div>
+
+    <div class="text3">
+        txt1-1
+        <div class="txt1">txt1-2</div><!-- txt1 -->
+        <div class="txt2">txt1-3</div><!-- txt1 -->
+    </div><!-- text3 -->
+
+    <div class="text4">굿</div>
+    <h1>안녕</h1>
+    <div class="text5">text5   </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+    background: darkcyan;
+}
+.left{
+    width: 200px;
+    height: 650px;
+    background: pink;
+    float: left;
+}
+.right{
+    width: 800px;
+    height: 650px;
+    background: darkolivegreen;
+    float: right;
+}
+.logo{
+    margin-bottom: 10px;
+}
+.logo a {
+    text-align: center;
+    line-height: 100px;
+    background: orange;
+    display: block;
+    height: 100px;
+}
+.nav{
+    width: 180px;
+    /* background: darkmagenta; */
+    margin: 0 auto;
+}
+.main{
+text-align: center;}
+.main > li{}
+.main > li > a{
+    display: block;
+    background: coral;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    transition: all 1s;
+}
+.main > li:hover > a{
+    background: crimson;
+    color: antiquewhite;
+}
+.main > li:hover .sub{
+    display: block;
+}
+.sub{
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background: violet;
+    color: darkblue;    
+}
+.sub li:hover a{
+    color: brown;
+}
+.up{
+    height: 350px;
+    background: greenyellow;
+}
+.center{
+    height: 200px;
+    background: darkkhaki;
+}
+.center > div{
+float: left;
+width: calc(100% / 3);
+height: 200px;
+line-height: 200px;
+text-align: center;}
+.c_notice{
+    background: darkseagreen;
+}
+.c_gallery{
+    background: steelblue;
+}
+.c_go{
+    background: tomato;
+}
+.down{
+    height: 100px;
+    background: skyblue;
+    text-align: center;
+}
+.d_copy{float: left;
+    background: green;
+    height: 100px;
+    line-height:100px ;
+    width: 600px;}
+.d_right{float: right;
+background: darkorchid;
+line-height: 50px;
+width: 200px;}
+.d_sns{
+    height: 50px;
+}
+.d_family{
+    height: 50px;
+    background: chocolate;
+}

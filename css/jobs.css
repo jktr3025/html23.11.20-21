@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.box{
+    width: 500px;
+    height: 300px;
+    border: 3px solid  black;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+.img1{
+    position: absolute;
+    left: 20px;
+    top: -70px;
+    animation: down_1 2s forwards ;
+}
+.img2{
+    position: absolute;
+    right: 0;
+    bottom: -300px;
+    animation: up_2 2s 1s forwards;
+}
+@keyframes down_1{
+    0%{top:-70; opacity: 0;}
+    100%{top:80px;opacity: 1;}
+}
+@keyframes up_2{
+    0%{bottom: -300px;opacity: 0;}
+    100%{bottom: 0;opacity: 1;}
+}

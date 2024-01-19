@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.box{
+    width: 500px;
+    height: 100px;
+    /* margin: 50px auto; */
+}
+.box1{
+    width: 80px;
+    height: 100px;
+    background: pink;
+    float: left;
+}
+.box2{
+    width: 400px;
+    height: 100px;
+    background: violet;
+    float: right;
+    animation: rotate 1s infinite ease-in-out alternate;
+    transform-origin: left bottom;
+}   
+@keyframes rotate{
+    0%{transform: rotate(0deg);
+    }
+    100%{transform: rotate(30deg);
+    }
+}
+
